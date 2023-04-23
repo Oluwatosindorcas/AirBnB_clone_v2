@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Install Python 3.4.3
+# sudo add-apt-repository ppa:deadsnakes/ppa
+# sudo apt-get update
+# sudo apt-get install python3.4
+
+# Create and activate virtual environment
+# virtualenv -p /usr/bin/python3.4 venv343
+# source venv343/bin/activate
+
+# Install required packages
+sudo apt-get -y install python3-dev
+sudo apt-get -y install libmysqlclient-dev
+sudo apt-get -y install zlib1g-dev
+sudo pip3 install mysqlclient
+sudo apt-get -y install mysql-server
+sudo apt-get install python3-pip
+pip3 install mysql-connector-python sqlalchemy Flask
+
+
+# Deactivate virtual environment
+# deactivate
